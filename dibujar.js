@@ -146,7 +146,7 @@ function drawShapes() {
             ctx.closePath();
         }
 
-        ctx.fillStyle = 'rgba(0, 100, 255, 0.3)';
+        ctx.fillStyle = 'rgba(252, 75, 8, 0.3)';
         ctx.fill();
         ctx.strokeStyle = index === selectedShapeIndex ? 'red' : 'black';
         ctx.stroke();
