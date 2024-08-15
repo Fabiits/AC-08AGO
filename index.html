@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Canvas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        #controls {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+        .button-group {
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <label for="shape">Selecciona una forma:</label>
+        <select id="shape">
+            <option value="rectangle">Rectángulo</option>
+            <option value="circle">Círculo</option>
+			<option value="triangle">Triangulo</option>
+            <option value="star">Estrella</option>
+        </select>
+        <button id="rotate">Rotar Figura</button>
+        <label for="scale">Escalar Figura:</label>
+        <input type="range" id="scale" min="0.5" max="2" step="0.1" value="1">
+        <div class="button-group">
+            <button id="moveLeft">Izquierda</button>
+            <button id="moveRight">Derecha</button>
+            <button id="moveUp">Arriba</button>
+            <button id="moveDown">Abajo</button>
+        </div>
+        <button id="clear">Limpiar Canvas</button>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src = "dibujar.js"></script>
+	<script src = "rotacion.js"></script>
+	<script src = "traslacion.js"></script>
+
+
+</body>
+</html>
